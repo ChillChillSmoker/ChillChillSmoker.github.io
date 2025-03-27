@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="telephone" content="15975489048"/>
+      <meta itemprop="address" content="华南农业大学，中国广州"/>
+
+      <header class="page-header">
+
+        {% if site.resume_avatar == 'true' %}
+        <img src="images/avatar.jpg" alt="黎源鸿" class="avatar no-print" itemprop="image">
+        {% endif %}
+
+        <h1 class="header-name" itemprop="name">黎源鸿</h1>
+
+        {% if site.display_header_contact_info == 'true' %}
+        <div class="header-contact-info">
+          <p>liyuanhong@scau.edu.cn</p>
+        </div>
+        {% endif %}
+
+        <div class="title-bar no-print">
+          <h2 class="header-title" itemprop="jobTitle" style="font-weight: bold; color: #003366;">副教授，华南农业大学</h2>
+          {% include icon-links.html %}
+        </div>
+
+        <div class="executive-summary" itemprop="description">
+          专注于农业人工智能、智能农机设计与低空遥感的研究，致力于将计算机视觉与深度学习应用于精准农业与农业装备的智能化。
+        </div>
+
+        <a href="mailto:liyuanhong@scau.edu.cn" class="contact-button no-print" itemprop="email" style="background-color: black; color: white;">联系我</a>
+
+      </header>
+
+      <section class="content-section">
+  <header class="section-header">
+    <h2>工作经历</h2>
+  </header>
+
+  <div class="resume-item">
+    <h3 class="resume-item-title"><img src="images/tamu_icon_icon.jpg" alt="TAMU" style="height: 18px; vertical-align: middle; margin-right: 6px;">德州农工大学</h3>
+    <h4 class="resume-item-details">博士后研究员 &bull; 2024年5月 – 至今</h4>
+    <p class="resume-item-copy">在生物与农业工程系从事农业智能感知、图像处理与智慧农业方向研究，合作导师为Zong Liu教授。</p>
+  </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><img src="images/scau_icon.png" alt="SCAU" style="height: 18px; vertical-align: middle; margin-right: 6px;">华南农业大学</h3>
+          <h4 class="resume-item-details">副教授 &bull; 2023年6月 – 至今</h4>
+          <p class="resume-item-copy">主持农业人工智能、自动采摘系统及机器人视觉等方向的科研与教学工作。</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">华南农业大学</h3>
+          <h4 class="resume-item-details">博士后研究员 &bull; 2021年6月 – 2023年9月</h4>
+          <p class="resume-item-copy">开展基于图像的土壤异物识别、无人机表型平台开发、农业传感系统研究。</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">德州农工大学</h3>
+          <h4 class="resume-item-details">访问学者 &bull; 2018年11月 – 2019年11月</h4>
+          <p class="resume-item-copy">国家留学基金委资助，从事精准农业及地下目标探测方向研究。</p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <header class="section-header">
+          <h2>教育经历</h2>
+        </header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">华南农业大学</h3>
+          <h4 class="resume-item-details">博士，农业机械化工程 &bull; 2017年 – 2021年</h4>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">华南农业大学</h3>
+          <h4 class="resume-item-details">硕士，机械设计与自动化 &bull; 2015年 – 2017年</h4>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><img src="images/gdou_icon.png" alt="GDOU" style="height: 18px; vertical-align: middle; margin-right: 6px;">广东海洋大学</h3>
+          <h4 class="resume-item-details">学士，船舶与海洋工程 &bull; 2010年 – 2014年</h4>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <header class="section-header">
+          <h2>研究方向</h2>
+        </header>
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            <li>农业人工智能（计算机视觉、深度学习）</li>
+            <li>智能农业机器人与农机装备设计</li>
+            <li>低空遥感图像处理与探地雷达识别</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <header class="section-header">
+          <h2>代表论文（部分带链接）</h2>
+        </header>
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            <li><a href="https://doi.org/10.1016/j.watres.2020.115471" target="_blank" style="text-decoration: none; color: inherit;">Li, Y. 等, "Lagoon water quality monitoring..." <em>Water Research</em> (IF 11.23)</a></li>
+            <li>Li, Y. 等, "An effective FDTD model for GPR..." <em>Soil and Tillage Research</em></li>
+            <li>Zhao, R., Li, Y.* "Contrastive learning for leaf disease..." <em>Computers and Electronics in Agriculture</em></li>
+            <li>Li, Y.* "End-to-end lightweight model for grape detection." <em>Biosystems Engineering</em></li>
+            <li>Luo, Y., Li, Y.* "YOLOv5 model for leaky eggs detection." <em>LWT</em></li>
+            <li>Chen, H., Li, Y.* "Point cloud completion of plant leaves." <em>Plant Phenomics</em></li>
+            <li>Li, Y.* "Real-time GPR image pattern recognition." <em>Sensors</em></li>
+            <li>Li, Y.* "Detection of foreign objects in soil using Mask-RCNN." <em>IJABE</em></li>
+            <li>Li, Y.* "Obstacle detection in soil using MSVMs." <em>Electronics</em></li>
+            <li>Li, Y.* "Predicting occluded picking positions with prototype networks." <em>Agronomy</em></li>
+            <li>Li, Y.* "Litchi multi-view extraction using two-stage model." <em>Agriculture</em></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <header class="section-header">
+          <h2>授权专利</h2>
+        </header>
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            <li>樱桃番茄采摘执行器及机器人（CN202211308417.5）</li>
+            <li>无人机端一体式夹持采摘装置（CN202310744504.3）</li>
+            <li>采摘无人机调试平台（CN202310745438.1）</li>
+            <li>可调节农作物表型采集平台（CN202410154354.5）</li>
+            <li>无人机末端采摘执行器（CN202410538065.5）</li>
+            <li>雷达+ADB的土壤异物识别装置（CN202011490025.6）</li>
+            <li>圆柱提取模型实现的双曲信号提取方法（CN202010237232.4）</li>
+            <li>基于激光+单目视觉的广角三维测量装置（CN201810488994.4）</li>
+            <li>单目视觉与激光配合图像识别系统（CN201810171987.1）</li>
+            <li>梁的振动频率识别装置及方法（CN201810397747.3）</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p class="footer-line">© 2024 黎源鸿. 基于 Jekyll + GitHub Pages 构建</p>
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>
