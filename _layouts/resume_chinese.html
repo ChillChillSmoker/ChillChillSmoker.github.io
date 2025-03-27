@@ -11,36 +11,21 @@
 
       <header class="page-header">
 
-        {% if site.resume_avatar == 'true' %}
-        <div style="display: flex; justify-content: center;">
-          <div style="
-              width: 210px; 
-              height: 210px; 
-              padding: 5px; 
-              border-radius: 50%; 
-              background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700); 
-              display: inline-block;">
-            <img src="images/liyuanhong.png" alt="黎源鸿" style="
-                width: 200px; 
-                height: 200px; 
-                border-radius: 50%; 
-                display: block;" 
-                class="avatar no-print" itemprop="image">
-          </div>
-        </div>
-        {% endif %}
+          {% if site.resume_avatar == 'true' %}
+            <div style="text-align: center;">
+              <img src="images/liyuanhong.png" alt="黎源鸿" style="
+                  width: 200px; 
+                  height: 200px; 
+                  border-radius: 50%; 
+                  display: inline-block;" 
+                  class="avatar no-print" itemprop="image">
+            </div>
+          {% endif %}
 
-        <h1 class="header-name" itemprop="name" style="
-          background: linear-gradient(90deg, #E5E4E2, #C0C0C0, #A9A9A9, #F8F8FF);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-weight: bold;
-          margin-top: 16px;
-          font-size: 2.5em;
-          ">
-          黎源鸿
-        </h1>
-        
+          <h1 class="header-name" itemprop="name" style="color: black; font-weight: bold;margin-top: 10px; font-size: 2.5em;">
+            黎源鸿
+          </h1>
+
         {% if site.display_header_contact_info == 'true' %}
         <div class="header-contact-info">
           <p>liyuanhong@scau.edu.cn</p>
